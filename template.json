@@ -1,0 +1,30 @@
+{
+  "date": "05/02/2023",
+  "Name": "example",
+  "description": "Example",
+  "data": [{
+    "xlabel": "label",
+    "ylabel": "label",
+    "title": "test",
+    "legend_position": "north",
+
+    "lines": [{
+        "xdata": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "ydata": [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100],
+        "color": "purple",
+        "style": "-",
+        "marker": "",
+        "legend": "legend1"
+      },
+      {
+        "xdata":[0,1,2,3,4],
+        "ydata":[1,2,3,4,5],
+        "color": "red",
+        "style": "--",
+        "marker": "",
+        "legend": "legend2"
+      }
+    ]
+  }
+]
+}

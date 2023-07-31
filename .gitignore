@@ -1,0 +1,6 @@
+.env/
+__py*
+out2/
+*.json
+
+!template.json
