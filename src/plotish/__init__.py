@@ -45,6 +45,8 @@ from typing import List ,Tuple
 from .dataset import DataSet
 from .interfaces.figureinterface import FigureInterface
 from .interfaces.linesInterface import LineInterface
+from importlib.metadata import version 
+__version__ = version("plotish")
 
 
 def make_out_folder(dir: str):
