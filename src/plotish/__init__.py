@@ -134,6 +134,7 @@ class Plottish:
         self._dataset = dataset
         plt.style.use('ggplot')
         self.types = types
+        self._show = False
 
     def plot(self) -> List[str]:
         """
@@ -148,6 +149,9 @@ class Plottish:
             for fig_type in self.types:
                 self.save(fig_type, i)
             warns.append(warn)
+
+        if self._show:
+            plt.show()
         return warns
 
     def save(self, fig_type: FigType, i: int) -> None:
@@ -169,7 +173,8 @@ class Plottish:
             case FigType.SVG:
                 plt.savefig(f"{name}.svg",dpi=300)
             case FigType.SHOW:
-                plt.show()
+                # plt.show()
+                self._show = True
             case _:
                 plt.savefig(f"{name}.png",dpi=50)      
 
